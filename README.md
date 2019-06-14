@@ -8,6 +8,9 @@
 # install dependencies
 npm install
 
+# Fake/Simulating Rrest API at localhost:3000
+npm run json
+
 # serve with hot reload at localhost:8080
 npm run dev
 
