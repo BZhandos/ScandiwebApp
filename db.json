@@ -1,0 +1,106 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Zhandos M.",
+      "age": "24",
+      "bio": "Who is John Galt?!",
+      "image": "me.jpg",
+      "currentAmout": "20"
+    }
+  ],
+  "statistics": [
+    {
+      "id": "1",
+      "month": "January",
+      "income": "5000",
+      "waste": "365"
+    },
+    {
+      "id": "2",
+      "month": "February",
+      "income": "46500",
+      "waste": "456"
+    },
+    {
+      "id": "3",
+      "month": "March",
+      "income": "",
+      "waste": ""
+    },
+    {
+      "id": "4",
+      "month": "April",
+      "income": "",
+      "waste": ""
+    },
+    {
+      "id": "5",
+      "month": "May",
+      "income": "",
+      "waste": ""
+    },
+    {
+      "id": "6",
+      "month": "June",
+      "income": "",
+      "waste": ""
+    },
+    {
+      "id": "7",
+      "month": "July",
+      "income": "",
+      "waste": ""
+    },
+    {
+      "id": "8",
+      "month": "August",
+      "income": "",
+      "waste": ""
+    },
+    {
+      "id": "9",
+      "month": "September",
+      "income": "",
+      "waste": ""
+    },
+    {
+      "id": "10",
+      "month": "October",
+      "income": "50000",
+      "waste": "4570"
+    },
+    {
+      "id": "11",
+      "month": "November",
+      "income": "40080",
+      "waste": "40007"
+    },
+    {
+      "id": "12",
+      "month": "December",
+      "income": "456546",
+      "waste": "444"
+    },
+    [
+      {
+        "id": "1",
+        "name": "Zhandos M.",
+        "age": "24",
+        "bio": "Who is John Galt?!",
+        "image": "me.jpg",
+        "currentAmout": "20"
+      }
+    ],
+    [
+      {
+        "id": "1",
+        "name": "Zhandos M.",
+        "age": "24",
+        "bio": "Who is John Galt?!",
+        "image": "me.jpg",
+        "currentAmout": "20"
+      }
+    ]
+  ]
+}
