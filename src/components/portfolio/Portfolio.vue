@@ -22,6 +22,11 @@ import CurrentCash from './CurrentCash.vue'
                 .then(response => {
                     localStorage.setItem('users', JSON.stringify(response.data))
                 });
+            axios
+                .get('http://localhost:3000/statistics')
+                .then(response => {
+                    localStorage.setItem('statistics', JSON.stringify(response.data))
+                });
         },
     }
 </script>

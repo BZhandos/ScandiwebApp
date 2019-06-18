@@ -94,7 +94,6 @@ import axios from 'axios'
                 this.users[0].currentAmout = (parseFloat(this.users[0].currentAmout) +  parseFloat(this.money)).toFixed(2);
                 localStorage.setItem('users', JSON.stringify(this.users));
                 this.BeingMillionerHandler();
-                beforeEnter();
             },
             SpendBudgetHandler() {
                 this.sendFieldViseable= false;

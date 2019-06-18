@@ -6,51 +6,79 @@
       "age": "24",
       "bio": "Who is John Galt?!",
       "image": "me.jpg",
-      "currentAmout": "20.00"
+      "currentAmout": 20.00
     }
   ],
   "statistics": [
     {
       "id": "1",
       "month": "January",
-      "income": "5000",
-      "waste": "365"
+      "income": 1800,
+      "waste": {
+        "food": 500.06,
+        "clothes": 100,
+        "other": 20
+      }
     },
     {
       "id": "2",
       "month": "February",
-      "income": "46500",
-      "waste": "456"
+      "income": 1400,
+      "waste": {
+        "food": 500.06,
+        "clothes": 100,
+        "other": 20
+      }
     },
     {
       "id": "3",
       "month": "March",
-      "income": "",
-      "waste": ""
+      "income": 1800,
+      "waste": {
+        "food": 500.06,
+        "clothes": 100,
+        "other": 20
+      }
     },
     {
       "id": "4",
       "month": "April",
-      "income": "",
-      "waste": ""
+      "income": 1800,
+      "waste": {
+        "food": 500.06,
+        "clothes": 100,
+        "other": 20
+      }
     },
     {
       "id": "5",
       "month": "May",
-      "income": "",
-      "waste": ""
+      "income": 1800,
+      "waste": {
+        "food": 500.06,
+        "clothes": 100,
+        "other": 20
+      }
     },
     {
       "id": "6",
       "month": "June",
-      "income": "",
-      "waste": ""
+      "income": 1800,
+      "waste": {
+        "food": 500.06,
+        "clothes": 100,
+        "other": 20
+      }
     },
     {
       "id": "7",
       "month": "July",
       "income": "",
-      "waste": ""
+      "waste": {
+        "food": 500.06,
+        "clothes": 100,
+        "other": 20
+      }
     },
     {
       "id": "8",
@@ -67,40 +95,21 @@
     {
       "id": "10",
       "month": "October",
-      "income": "50000",
-      "waste": "4570"
+      "income": "",
+      "waste": ""
     },
     {
       "id": "11",
       "month": "November",
-      "income": "40080",
-      "waste": "40007"
+      "income": "",
+      "waste": ""
     },
     {
       "id": "12",
       "month": "December",
-      "income": "456546",
-      "waste": "444"
-    },
-    [
-      {
-        "id": "1",
-        "name": "Zhandos M.",
-        "age": "24",
-        "bio": "Who is John Galt?!",
-        "image": "me.jpg",
-        "currentAmout": "20"
-      }
-    ],
-    [
-      {
-        "id": "1",
-        "name": "Zhandos M.",
-        "age": "24",
-        "bio": "Who is John Galt?!",
-        "image": "me.jpg",
-        "currentAmout": "20"
-      }
-    ]
+      "income": "",
+      "waste": ""
+    }
+
   ]
 }
