@@ -58,6 +58,14 @@ export default {
 </script>
 
 <style>
+.statistic-wrapper-header {
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .statistic-wrapper-months__links {
     display: flex;
 }
