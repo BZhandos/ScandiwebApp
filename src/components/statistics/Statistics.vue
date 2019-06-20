@@ -9,31 +9,27 @@
              v-dragscroll
         >
             <div    class="statistic-wrapper-months__name"
-                    v-for="link in statistics"
-                    @click="selectedMonth=link.id"
-                    :class="{selectedBorder: selectedMonth === link.id}"
-            >{{link.month}}</div>
+                    v-for="value in statistics"
+                    @click="getInPortionHandler(value)"
+                    :class="{selectedBorder: selectedMonth === value.id}"
+            >{{value.month}}</div>
         </div>
-        <div v-for="data in statistics">
-            <div v-if="selectedMonth === data.id">
-                <p>{{data.month}}</p>
-                <p>{{data.income}}</p>
-                <p>{{data.waste}}</p>
+
+        <div    class="statistic-wrapper-chart"
+                v-if="info">
+            <div
+                    v-for="(monthly,index) in info.waste" :key="index">
+                {{sendDataToChartHandler(monthly, index)}}
             </div>
-        </div>
-        <div class="statistic-wrapper-circle">
-            <div class="statistic-wrapper-circle-inner">
-                <div class="statistic-wrapper-circle__info"></div>
-            </div>
+            <pie-chart :chart-data="chartData"></pie-chart>
         </div>
 
 
 
 
-
-        <div class="statistic-wrapper-info" v-if="item">
-            <div class="statistic-wrapper-info__income">&#43;${{item.income}}</div>
-            <div class="statistic-wrapper-info__waste">-${{item.waste}}</div>
+        <div class="statistic-wrapper-info" v-if="info">
+            <div class="statistic-wrapper-info__income">&#43;${{info.income}}</div>
+            <div class="statistic-wrapper-info__waste">-${{info.waste[0].spent + info.waste[1].spent + info.waste[2].spent}}</div>
         </div>
         <div v-else>
             <!--<p>Here i go again</p>-->
@@ -45,34 +41,65 @@
 <script>
 import Back from '../Back.vue'
 import { dragscroll } from 'vue-dragscroll'
+import PieChart from "./PieChart.js";
 
 export default {
     directives: {
         'dragscroll': dragscroll
     },
     components: {
-        appBack: Back
+        appBack: Back,
+        PieChart
     },
     data() {
         return {
             statistics: '',
             info: null,
             currentIncome: null,
-            forFood: null,
-            forOther: null,
-            forClothe: null,
-            selectedMonth: 1
+            selectedMonth: 1,
+            chartData: {
+                labels: [],
+                datasets: [
+                    {
+                        label: "Data One",
+                        backgroundImage: "linear-gradient(#8D4DE8, #FF2366)",
+                        data: []
+                    }
+                ]
+            },
         };
     },
     created() {
         this.statistics= JSON.parse(localStorage.getItem('statistics'));
     },
     methods: {
-    }
+        getInPortionHandler(data) {
+            this.info = data;
+            this.selectedMonth = data.id;
+            this.chartData = {
+                labels: ["Green", "Red", "Blue"],
+                datasets: [
+                    {
+                        label: 'Data One',
+                        backgroundColor: ["#41B883", "#E46651", "#00D8FF"],
+                        // background: [ 'linear-gradient(#8D4DE8, #FF2366)', 'linear-gradient(#8D4DE8, #FF2366)', 'linear-gradient(#8D4DE8, #FF2366)'],
+                        data: []
+                    }
+                ]
+            }
+
+        },
+        sendDataToChartHandler(value, index){
+          if (value != 0) {
+            this.chartData.datasets[0].data[index] = value.spent;
+            this.chartData.labels[index] = value.category;
+          }
+        }
+    },
 }
 </script>
 
-<style>
+<style scoped>
 .statistic-wrapper {
     width: 375px;
 }
@@ -98,15 +125,43 @@ export default {
 .selectedBorder {
     border-bottom: 2px solid #0B78E3;
 }
-.statistic-wrapper-circle {
-
+.statistic-wrapper-chart {
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
 }
+
+
+.statistic-wrapper-circle__secondary {
+    background: black;
+    position: absolute;
+    text-align: center;
+    font-size: 28px;
+    top:0;left:0;bottom:0;right:0;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 15% 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
 .statistic-wrapper-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     font-size: 28px;
     text-align: center;
+    padding-top: 20px;
  }
 .statistic-wrapper-info__income {
     width: 40%;

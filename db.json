@@ -14,101 +14,265 @@
       "id": "1",
       "month": "January",
       "income": 1800,
-      "waste": {
-        "food": 500.06,
-        "clothes": 100,
-        "other": 20
-      }
+      "waste": [
+        {
+          "id": 0,
+          "category": "food",
+          "spent": 500.07
+        },
+        {
+          "id": 1,
+          "category": "clothes",
+          "spent": 400
+        },
+        {
+          "id":2,
+          "category": "other",
+          "spent": 800
+        }
+      ]
     },
     {
       "id": "2",
       "month": "February",
       "income": 1400,
-      "waste": {
-        "food": 500.06,
-        "clothes": 100,
-        "other": 20
-      }
+      "waste": [
+        {
+          "id": 0,
+          "category": "food",
+          "spent": 250
+        },
+        {
+          "id": 1,
+          "category": "clothes",
+          "spent": 100
+        },
+        {
+          "id":2,
+          "category": "other",
+          "spent": 50
+        }
+      ]
     },
     {
       "id": "3",
       "month": "March",
       "income": 1800,
-      "waste": {
-        "food": 500.06,
-        "clothes": 100,
-        "other": 20
-      }
+      "waste": [
+        {
+          "id": 0,
+          "category": "food",
+          "spent": 500.07
+        },
+        {
+          "id": 1,
+          "category": "clothes",
+          "spent": 400
+        },
+        {
+          "id":2,
+          "category": "other",
+          "spent": 800
+        }
+      ]
     },
     {
       "id": "4",
       "month": "April",
       "income": 1800,
-      "waste": {
-        "food": 500.06,
-        "clothes": 100,
-        "other": 20
-      }
+      "waste": [
+        {
+          "id": 0,
+          "category": "food",
+          "spent": 500.07
+        },
+        {
+          "id": 1,
+          "category": "clothes",
+          "spent": 400
+        },
+        {
+          "id":2,
+          "category": "other",
+          "spent": 800
+        }
+      ]
     },
     {
       "id": "5",
       "month": "May",
       "income": 1800,
-      "waste": {
-        "food": 500.06,
-        "clothes": 100,
-        "other": 20
-      }
+      "waste": [
+        {
+          "id": 0,
+          "category": "food",
+          "spent": 500.07
+        },
+        {
+          "id": 1,
+          "category": "clothes",
+          "spent": 400
+        },
+        {
+          "id":2,
+          "category": "other",
+          "spent": 800
+        }
+      ]
     },
     {
       "id": "6",
       "month": "June",
       "income": 1800,
-      "waste": {
-        "food": 500.06,
-        "clothes": 100,
-        "other": 20
-      }
+      "waste": [
+        {
+          "id": 0,
+          "category": "food",
+          "spent": 500.07
+        },
+        {
+          "id": 1,
+          "category": "clothes",
+          "spent": 400
+        },
+        {
+          "id":2,
+          "category": "other",
+          "spent": 800
+        }
+      ]
     },
     {
       "id": "7",
       "month": "July",
       "income": "",
-      "waste": {
-        "food": 500.06,
-        "clothes": 100,
-        "other": 20
-      }
+      "waste": [
+        {
+          "id": 0,
+          "category": "food",
+          "spent": 500.07
+        },
+        {
+          "id": 1,
+          "category": "clothes",
+          "spent": 400
+        },
+        {
+          "id":2,
+          "category": "other",
+          "spent": 800
+        }
+      ]
     },
     {
       "id": "8",
       "month": "August",
       "income": "",
-      "waste": ""
+      "waste": [
+        {
+          "id": 0,
+          "category": "food",
+          "spent": 0
+        },
+        {
+          "id": 1,
+          "category": "clothes",
+          "spent": 0
+        },
+        {
+          "id":2,
+          "category": "other",
+          "spent": 0
+        }
+      ]
     },
     {
       "id": "9",
       "month": "September",
       "income": "",
-      "waste": ""
+      "waste": [
+        {
+          "id": 0,
+          "category": "food",
+          "spent": 0
+        },
+        {
+          "id": 1,
+          "category": "clothes",
+          "spent": 0
+        },
+        {
+          "id":2,
+          "category": "other",
+          "spent": 0
+        }
+      ]
     },
     {
       "id": "10",
       "month": "October",
       "income": "",
-      "waste": ""
+      "waste": [
+        {
+          "id": 0,
+          "category": "food",
+          "spent": 0
+        },
+        {
+          "id": 1,
+          "category": "clothes",
+          "spent": 0
+        },
+        {
+          "id":2,
+          "category": "other",
+          "spent": 0
+        }
+      ]
     },
     {
       "id": "11",
       "month": "November",
       "income": "",
-      "waste": ""
+      "waste": [
+        {
+          "id": 0,
+          "category": "food",
+          "spent": 0
+        },
+        {
+          "id": 1,
+          "category": "clothes",
+          "spent": 0
+        },
+        {
+          "id":2,
+          "category": "other",
+          "spent": 0
+        }
+      ]
     },
     {
       "id": "12",
       "month": "December",
       "income": "",
-      "waste": ""
+      "waste": [
+        {
+          "id": 0,
+          "category": "food",
+          "spent": 0
+        },
+        {
+          "id": 1,
+          "category": "clothes",
+          "spent": 0
+        },
+        {
+          "id":2,
+          "category": "other",
+          "spent": 0
+        }
+      ]
     }
 
   ]
