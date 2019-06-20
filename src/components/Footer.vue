@@ -1,8 +1,15 @@
 <template>
     <div class="footer-wrapper">
-        <router-link to="/portfolio"><a>portfolio</a></router-link>
-        <router-link to="/news"><a>news</a></router-link>
-        <router-link to="/statistics"><a>statistics</a></router-link>
+        <router-link active-class="footer-wrapper-active" to="/portfolio">
+            <img class="footer-wrapper-icon" src="../assets/footer/1.png"  /></router-link>
+        <router-link active-class="footer-wrapper-active" to="/news">
+            <img class="footer-wrapper-icon" src="../assets/footer/2.png"  /></router-link>
+        <router-link active-class="footer-wrapper-active" to="/notifications">
+            <img class="footer-wrapper-icon" src="../assets/footer/3.png"  /></router-link>
+        <router-link active-class="footer-wrapper-active" to="/bookmark">
+            <img class="footer-wrapper-icon" src="../assets/footer/4.png"  /></router-link>
+        <router-link active-class="footer-wrapper-active" to="/statistics">
+            <img class="footer-wrapper-icon" src="../assets/footer/5.png"  /></router-link>
     </div>
 </template>
 
@@ -14,5 +21,18 @@
     flex-wrap: wrap;
     justify-content: space-around;
     border-top: 1px solid #778899;
+    padding: 15px 0;
+}
+.footer-wrapper-active {
+}
+.footer-wrapper-active img{
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+}
+.footer-wrapper-icon {
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.2);
+    -moz-filter: brightness(1.8) grayscale(1) opacity(.2);
+    filter: brightness(1.8) grayscale(1) opacity(.2);
 }
 </style>

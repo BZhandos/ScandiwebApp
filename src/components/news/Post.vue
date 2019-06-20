@@ -26,7 +26,8 @@
     export default {
         data() {
             return {
-                image: "https://i.pinimg.com/originals/b7/91/4f/b7914f3b0d7c481e7548be504a3829cc.jpg"
+                //image: "https://i.pinimg.com/originals/b7/91/4f/b7914f3b0d7c481e7548be504a3829cc.jpg"
+                image: "/src/assets/news.png"
             }
         }
     }
@@ -39,6 +40,7 @@
 .post-wrap-content {
     position: relative;
     background-repeat: no-repeat;
+    width: 375px;
     height: 505px;
 }
 .post-wrap-content__comment {
