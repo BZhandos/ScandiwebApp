@@ -1,7 +1,7 @@
 <template>
         <div class="arrow-wrapper"
              @click="goBackHandler()">
-            <transition name="slide">
+            <transition name="slidingOut">
                 <img    v-if="visable"
                         class="arrow-wrapper_circle" src="../assets/arrow-back.png" />
             </transition>
@@ -35,10 +35,10 @@
 .arrow-wrapper_circle {
     fill: red;
 }
-.slide-leave-active {
-    animation: slide-out 0.5s ease-out forwards;
+.slidingOut-leave-active {
+    animation: slidingOut 0.5s ease-out forwards;
 }
-@keyframes slide-out {
+@keyframes slidingOut {
     from {
         transform: translateY(0);
     }
