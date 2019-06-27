@@ -31,9 +31,6 @@
             <div class="statistic-wrapper-info__income">&#43;${{info.income}}</div>
             <div class="statistic-wrapper-info__waste">-${{info.waste[0].spent + info.waste[1].spent + info.waste[2].spent}}</div>
         </div>
-        <div v-else>
-            <!--<p>Here i go again</p>-->
-        </div>
     </div>
 </template>
 
@@ -62,7 +59,7 @@ export default {
                 datasets: [
                     {
                         label: "Data One",
-                        // backgroundImage: "linear-gradient(#8D4DE8, #FF2366)",
+                        backgroundColor: ["#41B883", "#E46651", "#00D8FF"],
                         data: []
                     }
                 ]
@@ -71,15 +68,6 @@ export default {
     },
     created() {
         this.statistics= JSON.parse(localStorage.getItem('statistics'));
-    },
-    mounted() {
-        // console.log (document.getElementById('doughnut-chart'));
-            // this.gradient = document.getElementById('doughnut-chart').getContext("2d");
-        //
-        // this.gradient = this.$refs.canvas.getContext('2d').createLinearGradient(0, 0, 0, 450);
-        // this.gradient.addColorStop(0, 'rgba(255, 0,0, 0.5)')
-        // this.gradient.addColorStop(0.5, 'rgba(255, 0, 0, 0.25)');
-        // this.gradient.addColorStop(1, 'rgba(255, 0, 0, 0)');
     },
     methods: {
         getInPortionHandler(data) {
@@ -90,9 +78,7 @@ export default {
                 datasets: [
                     {
                         label: 'Data One',
-                        // backgroundColor: ["#41B883", "#E46651", "#00D8FF"],
-                        // backgroundColor: [this.gradient, this.gradient, this.gradient],
-                        // background: [ 'linear-gradient(#8D4DE8, #FF2366)', 'linear-gradient(#8D4DE8, #FF2366)', 'linear-gradient(#8D4DE8, #FF2366)'],
+                        backgroundColor: ["#8D4DE8", "#6956EC", "#FD3F2F"],
                         data: []
                     }
                 ]

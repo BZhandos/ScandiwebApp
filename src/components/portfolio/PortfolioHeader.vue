@@ -101,7 +101,7 @@ export default {
     }
     &-desk {
         position: absolute;
-        width: 90px;
+        width: 100px;
         background-color: #6956EC;
         background-image: linear-gradient(#6956EC, #53B2BA);
         box-shadow: 0 0 10px #085fb5;
