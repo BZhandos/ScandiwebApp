@@ -13,7 +13,7 @@
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .footer-wrapper {
     background-color: #0E0F1A;
     color: #FFF;
@@ -22,17 +22,15 @@
     justify-content: space-around;
     border-top: 1px solid #778899;
     padding: 15px 0;
-}
-.footer-wrapper-active {
-}
-.footer-wrapper-active img{
-    -webkit-filter: none;
-    -moz-filter: none;
-    filter: none;
-}
-.footer-wrapper-icon {
-    -webkit-filter: brightness(1.8) grayscale(1) opacity(.2);
-    -moz-filter: brightness(1.8) grayscale(1) opacity(.2);
-    filter: brightness(1.8) grayscale(1) opacity(.2);
+    &-active img{
+        -webkit-filter: none;
+        -moz-filter: none;
+        filter: none;
+    }
+    &-icon {
+        -webkit-filter: brightness(1.8) grayscale(1) opacity(.2);
+        -moz-filter: brightness(1.8) grayscale(1) opacity(.2);
+        filter: brightness(1.8) grayscale(1) opacity(.2);
+    }
 }
 </style>

@@ -1,18 +1,18 @@
 <template>
     <div class="profile" v-if="users">
 
-        <div class="profile_info">
-            <div class="profile_info__name">{{ users[0].name }}</div>
-            <div class="profile_info__bio">{{users[0].bio}}</div>
+        <div class="profile-info">
+            <div class="profile-info__name">{{ users[0].name }}</div>
+            <div class="profile-info__bio">{{users[0].bio}}</div>
         </div>
-        <div class="profile_picture"
+        <div class="profile-picture"
              v-on:click="ShowCoindeskHandler()"
         >
-            <img :src="imgSrc + users[0].image" />
+            <img class="profile-picture__image" :src="imgSrc + users[0].image" />
         </div>
         <transition name="fade">
             <div v-show="showDialog"
-                 class="profile_desk"
+                 class="profile-desk"
             >
                 <template v-if="getInfo">
                     <div>Bitcoin rate</div>
@@ -65,7 +65,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 .profile {
     padding: 5px;
@@ -75,41 +75,43 @@ export default {
     position: relative;
     background-color: #0E0F1A;
     background-image: linear-gradient(#0E0F1A, #161823);
-}
-.profile_info {
-    display: flex;
-    flex-direction: column;
-    padding-left: 5%;
-}
-.profile_info__name {
-    font-size: 18px;
-    font-style: italic;
-}
-.profile_info__bio {
-    font-size: 14px;
-}
-.profile_picture img{
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid seashell;
-}
-.profile_picture img:hover{
-    border: 1px solid cornflowerblue;
-    transition: 1s;
-    cursor: pointer;
-}
-.profile_desk {
-    position: absolute;
-    width: 90px;
-    background-color: #6956EC;
-    background-image: linear-gradient(#6956EC, #53B2BA);
-    box-shadow: 0 0 10px #085fb5;
-    font-size: 12px;
-    padding: 5px;
-    border-radius: 2px;
-    top: 15px;
-    left: 55%;
-    z-index: 10;
+    &-info {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+        &__name{
+            font-size: 18px;
+            font-style: italic;
+        }
+        &__bio {
+            font-size: 14px;
+        }
+    }
+    &-picture {
+        &__image {
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid seashell;
+            &:hover {
+                border: 1px solid cornflowerblue;
+                transition: 1s;
+                cursor: pointer;
+            }
+        }
+    }
+    &-desk {
+        position: absolute;
+        width: 90px;
+        background-color: #6956EC;
+        background-image: linear-gradient(#6956EC, #53B2BA);
+        box-shadow: 0 0 10px #085fb5;
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 2px;
+        top: 15px;
+        left: 55%;
+        z-index: 10;
+    }
 }
 .fade-enter {
     opacity: 0;

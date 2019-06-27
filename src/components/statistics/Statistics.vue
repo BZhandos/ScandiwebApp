@@ -109,80 +109,55 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .statistic-wrapper {
     width: 375px;
-}
-.statistic-wrapper-header {
-    height: 85px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.statistic-wrapper-months {
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    background-color: #0E0F1A;
-}
-.statistic-wrapper-months__name {
-    padding: 15px 15px;
-    border-bottom: 2px solid transparent;
-    cursor: pointer;
+    &-header {
+         height: 85px;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+     }
+    &-months {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        background-color: #0E0F1A;
+        &__name {
+            padding: 15px 15px;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+        }
+    }
+    &-chart {
+        margin: 0 auto;
+        height: 300px;
+        width: 300px;
+    }
+    &-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-size: 28px;
+        text-align: center;
+        padding-top: 20px;
+        &__income {
+            width: 40%;
+            border: 1px solid #6956EC;
+            border-radius: 3px;
+            padding: 7px;
+        }
+        &__waste {
+            width: 40%;
+            border: 1px solid #FF2366;
+            border-radius: 3px;
+            padding: 7px;
+        }
+    }
 }
 .selectedBorder {
     border-bottom: 2px solid #0B78E3;
-}
-.statistic-wrapper-chart {
-    margin: 0 auto;
-    height: 300px;
-    width: 300px;
-}
-
-
-.statistic-wrapper-circle__secondary {
-    background: black;
-    position: absolute;
-    text-align: center;
-    font-size: 28px;
-    top:0;left:0;bottom:0;right:0;
-    width: 150px;
-    height: 150px;
-    margin: auto;
-    border-radius: 50%;
-    padding: 15% 0 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-
-
-
-
-
-
-
-.statistic-wrapper-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    font-size: 28px;
-    text-align: center;
-    padding-top: 20px;
- }
-.statistic-wrapper-info__income {
-    width: 40%;
-    border: 1px solid #6956EC;
-    border-radius: 3px;
-    padding: 7px;
-}
-.statistic-wrapper-info__waste {
-    width: 40%;
-    border: 1px solid #FF2366;
-    border-radius: 3px;
-    padding: 7px;
 }
 </style>

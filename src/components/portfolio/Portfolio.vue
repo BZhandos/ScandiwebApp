@@ -1,5 +1,5 @@
 <template>
-    <div class="portfolio_wrapper">
+    <div class="portfolio-wrapper">
         <portfolio-header/>
         <current-cash/>
     </div>
@@ -32,7 +32,7 @@ import CurrentCash from './CurrentCash.vue'
 </script>
 
 <style scoped>
-.portfolio_wrapper {
+.portfolio-wrapper {
     margin: 0 auto;
     text-align: center;
     background-color: #6956EC;

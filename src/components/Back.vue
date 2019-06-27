@@ -3,7 +3,7 @@
              @click="goBackHandler()">
             <transition name="slidingOut">
                 <img    v-if="visable"
-                        class="arrow-wrapper_circle" src="../assets/arrow-back.png" />
+                        class="arrow-wrapper__circle" src="../assets/arrow-back.png" />
             </transition>
         </div>
 </template>
@@ -31,9 +31,6 @@
     top: 30px;
     padding-left: 10px;
     cursor: pointer;
-}
-.arrow-wrapper_circle {
-    fill: red;
 }
 .slidingOut-leave-active {
     animation: slidingOut 0.5s ease-out forwards;

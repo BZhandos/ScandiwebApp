@@ -1,6 +1,6 @@
 <template>
     <div class="news-wrap"  v-dragscroll>
-            <app-back></app-back>
+        <app-back></app-back>
         <app-post></app-post>
         <app-post></app-post>
     </div>

@@ -26,55 +26,53 @@
     export default {
         data() {
             return {
-                //image: "https://i.pinimg.com/originals/b7/91/4f/b7914f3b0d7c481e7548be504a3829cc.jpg"
                 image: "/src/assets/news.png"
             }
         }
     }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .post-wrap {
-
-}
-.post-wrap-content {
-    position: relative;
-    background-repeat: no-repeat;
-    width: 375px;
-    height: 505px;
-}
-.post-wrap-content__comment {
-    position: absolute;
-    top: 50%;
-    margin: 0 15px;
-    border-bottom: 1px solid #ccc;
-}
-.post-wrap-content__title {
-    font-size: 40px;
-}
-.post-wrap-content__desc {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-.post-wrap-info {
-    padding: 0 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    font-size: 16px;
-    line-height: 40px;
-}
-.post-wrap-likes {
-    padding: 0 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    font-size: 14px;
-    line-height: 20px;
-}
-.post-wrap-likes__amount {
-    background-color: #FD51D9;
-    padding: 0 4px;
-    border-radius: 10px;
+    &-content {
+        position: relative;
+        background-repeat: no-repeat;
+        width: 375px;
+        height: 505px;
+        &__comment {
+            position: absolute;
+            top: 50%;
+            margin: 0 15px;
+            border-bottom: 1px solid #ccc;
+        }
+        &__title {
+            font-size: 40px;
+        }
+        &__desc {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+    &-info {
+        padding: 0 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 16px;
+        line-height: 40px;
+    }
+    &-likes {
+        padding: 0 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    &__amount {
+        background-color: #FD51D9;
+        padding: 0 4px;
+        border-radius: 10px;
+    }
 }
 </style>

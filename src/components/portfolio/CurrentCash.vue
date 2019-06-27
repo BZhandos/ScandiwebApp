@@ -4,13 +4,13 @@
         <div class="current_cash_header">${{users[0].currentAmout}}</div>
         <button
                 v-on:click="inputFieldViseable=true"
-                class="current_cash_box__button"
+                class="current_cash__button"
         >
             Add money</button>
 
         <button
                 v-on:click="sendFieldViseable=true"
-                class="current_cash_box__button"
+                class="current_cash__button"
         >
             Spend money</button>
         <transition name="slide"> /* adding money block*/
@@ -73,7 +73,6 @@
 
 </template>
 <script>
-import axios from 'axios'
     export default {
         data() {
             return {
@@ -113,7 +112,7 @@ import axios from 'axios'
 .current_cash {
     position: relative;
 }
-.current_cash_box__button {
+.current_cash__button {
     background-color: #0E0F1A;
     border: none;
     color: white;
@@ -125,7 +124,7 @@ import axios from 'axios'
     margin: 4px 2px;
     cursor: pointer;
 }
-.current_cash_box__button:hover, .current_cash_box__button:active {
+.current_cash__button:hover, .current_cash__button:active {
     background-color: #161823;
     color: #FF2366;
 }
